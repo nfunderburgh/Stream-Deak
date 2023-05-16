@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.DarkModeSwitch = new MaterialSkin.Controls.MaterialSwitch();
-            this.OBSButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.Discord = new MaterialSkin.Controls.MaterialButton();
-            this.SoundCloud = new MaterialSkin.Controls.MaterialButton();
-            this.StartStream = new MaterialSkin.Controls.MaterialButton();
+            this.OBSButton = new MaterialSkin.Controls.MaterialButton();
+            this.DiscordButton = new MaterialSkin.Controls.MaterialButton();
+            this.SoundCloudBlutton = new MaterialSkin.Controls.MaterialButton();
+            this.StartStreamButton = new MaterialSkin.Controls.MaterialButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.Stream_Manager = new MaterialSkin.Controls.MaterialButton();
+            this.StreamManagerButton = new MaterialSkin.Controls.MaterialButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.settingsPictureBox = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
@@ -58,132 +58,136 @@
             this.DarkModeSwitch.UseVisualStyleBackColor = true;
             this.DarkModeSwitch.CheckedChanged += new System.EventHandler(this.DarkModeSwitch_CheckedChanged);
             // 
-            // OBSButton1
+            // OBSButton
             // 
-            this.OBSButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.OBSButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.OBSButton1.Depth = 0;
-            this.OBSButton1.HighEmphasis = true;
-            this.OBSButton1.Icon = null;
-            this.OBSButton1.Location = new System.Drawing.Point(205, 27);
-            this.OBSButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.OBSButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.OBSButton1.Name = "OBSButton1";
-            this.OBSButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.OBSButton1.Size = new System.Drawing.Size(64, 36);
-            this.OBSButton1.TabIndex = 7;
-            this.OBSButton1.Text = "OBS";
-            this.OBSButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.OBSButton1.UseAccentColor = false;
-            this.OBSButton1.UseVisualStyleBackColor = true;
-            this.OBSButton1.Click += new System.EventHandler(this.OBSButton_Click);
+            this.OBSButton.AutoSize = false;
+            this.OBSButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.OBSButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.OBSButton.Depth = 0;
+            this.OBSButton.HighEmphasis = true;
+            this.OBSButton.Icon = null;
+            this.OBSButton.Location = new System.Drawing.Point(191, 72);
+            this.OBSButton.Margin = new System.Windows.Forms.Padding(0);
+            this.OBSButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.OBSButton.Name = "OBSButton";
+            this.OBSButton.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.OBSButton.Size = new System.Drawing.Size(64, 36);
+            this.OBSButton.TabIndex = 7;
+            this.OBSButton.Text = "OBS";
+            this.OBSButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.OBSButton.UseAccentColor = false;
+            this.OBSButton.UseVisualStyleBackColor = true;
+            this.OBSButton.Click += new System.EventHandler(this.OBSButton_Click);
             // 
-            // Discord
+            // DiscordButton
             // 
-            this.Discord.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Discord.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.Discord.Depth = 0;
-            this.Discord.HighEmphasis = true;
-            this.Discord.Icon = null;
-            this.Discord.Location = new System.Drawing.Point(186, 87);
-            this.Discord.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.Discord.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Discord.Name = "Discord";
-            this.Discord.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.Discord.Size = new System.Drawing.Size(83, 36);
-            this.Discord.TabIndex = 9;
-            this.Discord.Text = "Discord";
-            this.Discord.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.Discord.UseAccentColor = false;
-            this.Discord.UseVisualStyleBackColor = true;
-            this.Discord.Click += new System.EventHandler(this.Discord_Click);
+            this.DiscordButton.AutoSize = false;
+            this.DiscordButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.DiscordButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.DiscordButton.Depth = 0;
+            this.DiscordButton.HighEmphasis = true;
+            this.DiscordButton.Icon = null;
+            this.DiscordButton.Location = new System.Drawing.Point(191, 24);
+            this.DiscordButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.DiscordButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.DiscordButton.Name = "DiscordButton";
+            this.DiscordButton.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.DiscordButton.Size = new System.Drawing.Size(83, 36);
+            this.DiscordButton.TabIndex = 9;
+            this.DiscordButton.Text = "Discord";
+            this.DiscordButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.DiscordButton.UseAccentColor = false;
+            this.DiscordButton.UseVisualStyleBackColor = true;
+            this.DiscordButton.Click += new System.EventHandler(this.Discord_Click);
             // 
-            // SoundCloud
+            // SoundCloudBlutton
             // 
-            this.SoundCloud.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.SoundCloud.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.SoundCloud.Depth = 0;
-            this.SoundCloud.HighEmphasis = true;
-            this.SoundCloud.Icon = null;
-            this.SoundCloud.Location = new System.Drawing.Point(24, 146);
-            this.SoundCloud.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.SoundCloud.MouseState = MaterialSkin.MouseState.HOVER;
-            this.SoundCloud.Name = "SoundCloud";
-            this.SoundCloud.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.SoundCloud.Size = new System.Drawing.Size(121, 36);
-            this.SoundCloud.TabIndex = 10;
-            this.SoundCloud.Text = "Sound Cloud";
-            this.SoundCloud.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.SoundCloud.UseAccentColor = false;
-            this.SoundCloud.UseVisualStyleBackColor = true;
-            this.SoundCloud.Click += new System.EventHandler(this.SoundCloud_Click);
+            this.SoundCloudBlutton.AutoSize = false;
+            this.SoundCloudBlutton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.SoundCloudBlutton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.SoundCloudBlutton.Depth = 0;
+            this.SoundCloudBlutton.HighEmphasis = true;
+            this.SoundCloudBlutton.Icon = null;
+            this.SoundCloudBlutton.Location = new System.Drawing.Point(24, 120);
+            this.SoundCloudBlutton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.SoundCloudBlutton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.SoundCloudBlutton.Name = "SoundCloudBlutton";
+            this.SoundCloudBlutton.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.SoundCloudBlutton.Size = new System.Drawing.Size(121, 36);
+            this.SoundCloudBlutton.TabIndex = 10;
+            this.SoundCloudBlutton.Text = "Sound Cloud";
+            this.SoundCloudBlutton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.SoundCloudBlutton.UseAccentColor = false;
+            this.SoundCloudBlutton.UseVisualStyleBackColor = true;
+            this.SoundCloudBlutton.Click += new System.EventHandler(this.SoundCloud_Click);
             // 
-            // StartStream
+            // StartStreamButton
             // 
-            this.StartStream.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.StartStream.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.StartStream.Depth = 0;
-            this.StartStream.HighEmphasis = true;
-            this.StartStream.Icon = null;
-            this.StartStream.Location = new System.Drawing.Point(24, 87);
-            this.StartStream.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.StartStream.MouseState = MaterialSkin.MouseState.HOVER;
-            this.StartStream.Name = "StartStream";
-            this.StartStream.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.StartStream.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.StartStream.Size = new System.Drawing.Size(128, 36);
-            this.StartStream.TabIndex = 11;
-            this.StartStream.Text = "Start Stream";
-            this.StartStream.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.StartStream.UseAccentColor = false;
-            this.StartStream.UseVisualStyleBackColor = true;
-            this.StartStream.Click += new System.EventHandler(this.StartStream_Click);
+            this.StartStreamButton.AutoSize = false;
+            this.StartStreamButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.StartStreamButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.StartStreamButton.Depth = 0;
+            this.StartStreamButton.HighEmphasis = true;
+            this.StartStreamButton.Icon = null;
+            this.StartStreamButton.Location = new System.Drawing.Point(24, 24);
+            this.StartStreamButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.StartStreamButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.StartStreamButton.Name = "StartStreamButton";
+            this.StartStreamButton.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.StartStreamButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartStreamButton.Size = new System.Drawing.Size(128, 36);
+            this.StartStreamButton.TabIndex = 11;
+            this.StartStreamButton.Text = "Start Stream";
+            this.StartStreamButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.StartStreamButton.UseAccentColor = false;
+            this.StartStreamButton.UseVisualStyleBackColor = true;
+            this.StartStreamButton.Click += new System.EventHandler(this.StartStream_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.Stream_Manager);
-            this.panel1.Controls.Add(this.OBSButton1);
-            this.panel1.Controls.Add(this.SoundCloud);
-            this.panel1.Controls.Add(this.StartStream);
-            this.panel1.Controls.Add(this.Discord);
+            this.panel1.Controls.Add(this.OBSButton);
+            this.panel1.Controls.Add(this.StreamManagerButton);
+            this.panel1.Controls.Add(this.SoundCloudBlutton);
+            this.panel1.Controls.Add(this.StartStreamButton);
+            this.panel1.Controls.Add(this.DiscordButton);
             this.panel1.Location = new System.Drawing.Point(37, 93);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(336, 189);
+            this.panel1.Size = new System.Drawing.Size(352, 189);
             this.panel1.TabIndex = 12;
             // 
-            // Stream_Manager
+            // StreamManagerButton
             // 
-            this.Stream_Manager.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Stream_Manager.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.Stream_Manager.Depth = 0;
-            this.Stream_Manager.HighEmphasis = true;
-            this.Stream_Manager.Icon = null;
-            this.Stream_Manager.Location = new System.Drawing.Point(24, 27);
-            this.Stream_Manager.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.Stream_Manager.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Stream_Manager.Name = "Stream_Manager";
-            this.Stream_Manager.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.Stream_Manager.Size = new System.Drawing.Size(153, 36);
-            this.Stream_Manager.TabIndex = 13;
-            this.Stream_Manager.Text = "Stream Manager";
-            this.Stream_Manager.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.Stream_Manager.UseAccentColor = false;
-            this.Stream_Manager.UseVisualStyleBackColor = true;
-            this.Stream_Manager.Click += new System.EventHandler(this.Stream_Manager_Click);
+            this.StreamManagerButton.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.StreamManagerButton.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.StreamManagerButton.Depth = 0;
+            this.StreamManagerButton.HighEmphasis = true;
+            this.StreamManagerButton.Icon = null;
+            this.StreamManagerButton.Location = new System.Drawing.Point(24, 72);
+            this.StreamManagerButton.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.StreamManagerButton.MouseState = MaterialSkin.MouseState.HOVER;
+            this.StreamManagerButton.Name = "StreamManagerButton";
+            this.StreamManagerButton.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.StreamManagerButton.Size = new System.Drawing.Size(153, 36);
+            this.StreamManagerButton.TabIndex = 13;
+            this.StreamManagerButton.Text = "Stream Manager";
+            this.StreamManagerButton.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.StreamManagerButton.UseAccentColor = false;
+            this.StreamManagerButton.UseVisualStyleBackColor = true;
+            this.StreamManagerButton.Click += new System.EventHandler(this.Stream_Manager_Click);
             // 
             // panel2
             // 
             this.panel2.Location = new System.Drawing.Point(37, 288);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(336, 160);
+            this.panel2.Size = new System.Drawing.Size(352, 160);
             this.panel2.TabIndex = 13;
             // 
             // settingsPictureBox
             // 
             this.settingsPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("settingsPictureBox.Image")));
-            this.settingsPictureBox.Location = new System.Drawing.Point(6, 67);
+            this.settingsPictureBox.Location = new System.Drawing.Point(6, 76);
             this.settingsPictureBox.Name = "settingsPictureBox";
-            this.settingsPictureBox.Size = new System.Drawing.Size(52, 50);
+            this.settingsPictureBox.Size = new System.Drawing.Size(33, 35);
             this.settingsPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.settingsPictureBox.TabIndex = 14;
             this.settingsPictureBox.TabStop = false;
@@ -210,12 +214,12 @@
 
         #endregion
         private MaterialSkin.Controls.MaterialSwitch DarkModeSwitch;
-        private MaterialSkin.Controls.MaterialButton OBSButton1;
-        private MaterialSkin.Controls.MaterialButton Discord;
-        private MaterialSkin.Controls.MaterialButton SoundCloud;
-        private MaterialSkin.Controls.MaterialButton StartStream;
+        private MaterialSkin.Controls.MaterialButton OBSButton;
+        private MaterialSkin.Controls.MaterialButton DiscordButton;
+        private MaterialSkin.Controls.MaterialButton SoundCloudBlutton;
+        private MaterialSkin.Controls.MaterialButton StartStreamButton;
         private System.Windows.Forms.Panel panel1;
-        private MaterialSkin.Controls.MaterialButton Stream_Manager;
+        private MaterialSkin.Controls.MaterialButton StreamManagerButton;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox settingsPictureBox;
     }

@@ -12,3 +12,17 @@ C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\obj\D
 C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\bin\Debug\MaterialSkin.dll
 C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\obj\Debug\StreamDeck.csproj.CopyComplete
 C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\obj\Debug\StreamDeck.Form2.resources
+D:\Github\Stream-Deak\StreamDeck\StreamDeck\bin\Debug\StreamDeck.exe.config
+D:\Github\Stream-Deak\StreamDeck\StreamDeck\bin\Debug\StreamDeck.exe
+D:\Github\Stream-Deak\StreamDeck\StreamDeck\bin\Debug\StreamDeck.pdb
+D:\Github\Stream-Deak\StreamDeck\StreamDeck\bin\Debug\MaterialSkin.dll
+D:\Github\Stream-Deak\StreamDeck\StreamDeck\obj\Debug\StreamDeck.csproj.AssemblyReference.cache
+D:\Github\Stream-Deak\StreamDeck\StreamDeck\obj\Debug\StreamDeck.csproj.SuggestedBindingRedirects.cache
+D:\Github\Stream-Deak\StreamDeck\StreamDeck\obj\Debug\StreamDeck.Form1.resources
+D:\Github\Stream-Deak\StreamDeck\StreamDeck\obj\Debug\StreamDeck.Form2.resources
+D:\Github\Stream-Deak\StreamDeck\StreamDeck\obj\Debug\StreamDeck.Properties.Resources.resources
+D:\Github\Stream-Deak\StreamDeck\StreamDeck\obj\Debug\StreamDeck.csproj.GenerateResource.cache
+D:\Github\Stream-Deak\StreamDeck\StreamDeck\obj\Debug\StreamDeck.csproj.CoreCompileInputs.cache
+D:\Github\Stream-Deak\StreamDeck\StreamDeck\obj\Debug\StreamDeck.csproj.CopyComplete
+D:\Github\Stream-Deak\StreamDeck\StreamDeck\obj\Debug\StreamDeck.exe
+D:\Github\Stream-Deak\StreamDeck\StreamDeck\obj\Debug\StreamDeck.pdb

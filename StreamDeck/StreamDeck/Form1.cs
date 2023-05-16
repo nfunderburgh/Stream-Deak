@@ -21,6 +21,7 @@ namespace StreamDeck
         public Form1()
         {
             InitializeComponent();
+            InitializeButtonWidth();
             KeyPreview = true;
 
             form2 = new Form2(this);
@@ -38,6 +39,15 @@ namespace StreamDeck
         }
 
         MaterialSkinManager TManager=MaterialSkinManager.Instance;
+
+        private void InitializeButtonWidth()
+        {
+            int width = StreamManagerButton.Width;
+            OBSButton.Width = width;
+            SoundCloudBlutton.Width = width;
+            StartStreamButton.Width = width;
+            DiscordButton.Width = width;
+        }
 
         private void OBSButton_Click(object sender, EventArgs e)
         {
