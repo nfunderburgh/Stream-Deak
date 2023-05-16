@@ -1,0 +1,14 @@
+C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\bin\Debug\StreamDeck.exe.config
+C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\bin\Debug\StreamDeck.exe
+C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\bin\Debug\StreamDeck.pdb
+C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\obj\Debug\StreamDeck.csproj.AssemblyReference.cache
+C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\obj\Debug\StreamDeck.csproj.SuggestedBindingRedirects.cache
+C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\obj\Debug\StreamDeck.Form1.resources
+C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\obj\Debug\StreamDeck.Properties.Resources.resources
+C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\obj\Debug\StreamDeck.csproj.GenerateResource.cache
+C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\obj\Debug\StreamDeck.csproj.CoreCompileInputs.cache
+C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\obj\Debug\StreamDeck.exe
+C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\obj\Debug\StreamDeck.pdb
+C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\bin\Debug\MaterialSkin.dll
+C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\obj\Debug\StreamDeck.csproj.CopyComplete
+C:\Users\APR Services\Desktop\Milestone_1\StreamDeck\StreamDeck\StreamDeck\obj\Debug\StreamDeck.Form2.resources
