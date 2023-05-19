@@ -1,6 +1,6 @@
 ﻿namespace StreamDeck
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.DarkModeSwitch = new MaterialSkin.Controls.MaterialSwitch();
             this.OBSButton = new MaterialSkin.Controls.MaterialButton();
             this.DiscordButton = new MaterialSkin.Controls.MaterialButton();

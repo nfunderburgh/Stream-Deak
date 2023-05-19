@@ -13,18 +13,21 @@ using MaterialSkin;
 using MaterialSkin.Controls;
 using Utilities;
 
+
 namespace StreamDeck
 {
-    public partial class Form1 : MaterialForm
+    public partial class MainForm : MaterialForm
     {
-        Form2 form2;
-        public Form1()
+        KeybindForm keybindform;
+        Location location = new Location();
+
+        public MainForm()
         {
             InitializeComponent();
             InitializeButtonWidth();
             KeyPreview = true;
 
-            form2 = new Form2(this);
+            keybindform = new KeybindForm(this);
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             
@@ -52,17 +55,17 @@ namespace StreamDeck
         private void OBSButton_Click(object sender, EventArgs e)
         {
             Directory.SetCurrentDirectory(@"C:\Program Files\obs-studio\bin\64bit\");
-            System.Diagnostics.Process.Start(@"C:\Program Files\obs-studio\bin\64bit\obs64.exe");
+            Process.Start(@"C:\Program Files\obs-studio\bin\64bit\obs64.exe");
         }
 
         private void Discord_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(@"C:\Users\APR Services\AppData\Local\Discord\app-1.0.9006\Discord.exe");
+            Process.Start(location.discord);
         }
 
         private void SoundCloud_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://soundcloud.com/discover");
+            Process.Start("https://soundcloud.com/discover");
         }
 
         private void StartStream_Click(object sender, EventArgs e)
@@ -75,13 +78,13 @@ namespace StreamDeck
 
         private void Stream_Manager_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://dashboard.twitch.tv/u/zapb0lt/stream-manager");
+            Process.Start("https://dashboard.twitch.tv/u/zapb0lt/stream-manager");
         }
 
         private void settingsPictureBox_Click(object sender, EventArgs e)
         {
             this.Hide();
-            form2.Show();
+            keybindform.Show();
         }
 
         private void DarkModeSwitch_CheckedChanged(object sender, EventArgs e)
@@ -104,19 +107,19 @@ namespace StreamDeck
             {
                 settingsPictureBox_Click(sender, e);
             }
-            if (e.KeyCode == (Keys)Enum.Parse(typeof(Keys), form2.SoundCloudButtonKeybind.Text, true))
+            if (e.KeyCode == (Keys)Enum.Parse(typeof(Keys), keybindform.SoundCloudButtonKeybind.Text, true))
             {
                 SoundCloud_Click(sender, e);
             }
-            if (e.KeyCode == (Keys)Enum.Parse(typeof(Keys), form2.DiscordButtonKeybind.Text, true))
+            if (e.KeyCode == (Keys)Enum.Parse(typeof(Keys), keybindform.DiscordButtonKeybind.Text, true))
             {
                 Discord_Click(sender, e);
             }
-            if (e.KeyCode == (Keys)Enum.Parse(typeof(Keys), form2.OBSButtonKeybind.Text, true))
+            if (e.KeyCode == (Keys)Enum.Parse(typeof(Keys), keybindform.OBSButtonKeybind.Text, true))
             {
                 OBSButton_Click(sender, e);
             }
-            if (e.KeyCode == (Keys)Enum.Parse(typeof(Keys), form2.StreamManagerButtonKeybind.Text, true))
+            if (e.KeyCode == (Keys)Enum.Parse(typeof(Keys), keybindform.StreamManagerButtonKeybind.Text, true))
             {
                 Stream_Manager_Click(sender, e);
             }

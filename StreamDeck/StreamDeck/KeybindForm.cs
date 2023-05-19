@@ -12,15 +12,15 @@ using MaterialSkin.Controls;
 
 namespace StreamDeck
 {
-    public partial class Form2 : MaterialForm 
+    public partial class KeybindForm : MaterialForm 
     {
-        Form1 form1;
-        public Form2(Form1 frm)
+        MainForm mainform;
+        public KeybindForm(MainForm mainfrm)
         {
             InitializeComponent();
             KeyPreview = true;
 
-            form1 = frm;
+            mainform = mainfrm;
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
         }
@@ -48,7 +48,7 @@ namespace StreamDeck
         private void Back_Click(object sender, EventArgs e)
         {
             this.Hide();
-            form1.Show();
+            mainform.Show();
         }
 
         private void Back_KeyDown(object sender, KeyEventArgs e)

@@ -1,6 +1,6 @@
 ﻿namespace StreamDeck
 {
-    partial class Form2
+    partial class KeybindForm
     {
         /// <summary>
         /// Required designer variable.
