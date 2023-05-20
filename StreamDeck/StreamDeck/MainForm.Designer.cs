@@ -36,8 +36,8 @@
             this.StartStreamButton = new MaterialSkin.Controls.MaterialButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.StreamManagerButton = new MaterialSkin.Controls.MaterialButton();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.settingsPictureBox = new System.Windows.Forms.PictureBox();
+            this.Alert1 = new MaterialSkin.Controls.MaterialButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -145,6 +145,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.Alert1);
             this.panel1.Controls.Add(this.OBSButton);
             this.panel1.Controls.Add(this.StreamManagerButton);
             this.panel1.Controls.Add(this.SoundCloudBlutton);
@@ -152,7 +153,7 @@
             this.panel1.Controls.Add(this.DiscordButton);
             this.panel1.Location = new System.Drawing.Point(37, 93);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(352, 189);
+            this.panel1.Size = new System.Drawing.Size(352, 329);
             this.panel1.TabIndex = 12;
             // 
             // StreamManagerButton
@@ -175,13 +176,6 @@
             this.StreamManagerButton.UseVisualStyleBackColor = true;
             this.StreamManagerButton.Click += new System.EventHandler(this.Stream_Manager_Click);
             // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(37, 288);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(352, 160);
-            this.panel2.TabIndex = 13;
-            // 
             // settingsPictureBox
             // 
             this.settingsPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("settingsPictureBox.Image")));
@@ -193,16 +187,36 @@
             this.settingsPictureBox.TabStop = false;
             this.settingsPictureBox.Click += new System.EventHandler(this.settingsPictureBox_Click);
             // 
-            // Form1
+            // Alert1
+            // 
+            this.Alert1.AutoSize = false;
+            this.Alert1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Alert1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.Alert1.Depth = 0;
+            this.Alert1.HighEmphasis = true;
+            this.Alert1.Icon = null;
+            this.Alert1.Location = new System.Drawing.Point(24, 168);
+            this.Alert1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.Alert1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.Alert1.Name = "Alert1";
+            this.Alert1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.Alert1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Alert1.Size = new System.Drawing.Size(128, 36);
+            this.Alert1.TabIndex = 14;
+            this.Alert1.Text = "Alert 1";
+            this.Alert1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.Alert1.UseAccentColor = false;
+            this.Alert1.UseVisualStyleBackColor = true;
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(504, 471);
             this.Controls.Add(this.settingsPictureBox);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.DarkModeSwitch);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Stream Deck";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -220,8 +234,8 @@
         private MaterialSkin.Controls.MaterialButton StartStreamButton;
         private System.Windows.Forms.Panel panel1;
         private MaterialSkin.Controls.MaterialButton StreamManagerButton;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox settingsPictureBox;
+        private MaterialSkin.Controls.MaterialButton Alert1;
     }
 }
 

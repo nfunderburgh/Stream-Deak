@@ -21,6 +21,9 @@ namespace StreamDeck
         KeybindForm keybindform;
         Location location = new Location();
 
+        /*
+         * The Main Form Constructor
+         */
         public MainForm()
         {
             InitializeComponent();
@@ -38,11 +41,14 @@ namespace StreamDeck
             gkh.HookedKeys.Add(Keys.E);
             gkh.HookedKeys.Add(Keys.W);
             gkh.HookedKeys.Add(Keys.F);
-            gkh.KeyDown += new KeyEventHandler(Form1_KeyDown);
+            gkh.KeyDown += new KeyEventHandler(MainForm_KeyDown);
         }
 
         MaterialSkinManager TManager=MaterialSkinManager.Instance;
 
+        /*
+         * Initalizes the width of the buttons so they are the same size
+         */
         private void InitializeButtonWidth()
         {
             int width = StreamManagerButton.Width;
@@ -50,24 +56,60 @@ namespace StreamDeck
             SoundCloudBlutton.Width = width;
             StartStreamButton.Width = width;
             DiscordButton.Width = width;
+            Alert1.Width = width;
         }
 
+        /*
+         * Launches OBS when the button is clicked
+         * 
+         * @param object reference to the control/object that raised the event
+         * @param EventArgs contains event data
+         */
         private void OBSButton_Click(object sender, EventArgs e)
         {
             Directory.SetCurrentDirectory(@"C:\Program Files\obs-studio\bin\64bit\");
             Process.Start(@"C:\Program Files\obs-studio\bin\64bit\obs64.exe");
         }
 
+        /*
+        * Launches Discord when the button is clicked
+        * 
+        * @param object reference to the control/object that raised the event
+        * @param EventArgs contains event data
+        */
         private void Discord_Click(object sender, EventArgs e)
         {
             Process.Start(location.discord);
         }
 
+        /*
+        * Launches Soundcloud in chrome when the button is clicked
+        * 
+        * @param object reference to the control/object that raised the event
+        * @param EventArgs contains event data
+        */
         private void SoundCloud_Click(object sender, EventArgs e)
         {
             Process.Start("https://soundcloud.com/discover");
         }
 
+        /*
+        * Launches stream manager in chrome when the button is clicked
+        * 
+        * @param object reference to the control/object that raised the event
+        * @param EventArgs contains event data
+        */
+        private void Stream_Manager_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://dashboard.twitch.tv/u/zapb0lt/stream-manager");
+        }
+
+        /*
+        * Launches All applications needed for the start of a stream
+        * 
+        * @param object reference to the control/object that raised the event
+        * @param EventArgs contains event data
+        */
         private void StartStream_Click(object sender, EventArgs e)
         {
             OBSButton_Click(sender, e);
@@ -76,17 +118,24 @@ namespace StreamDeck
             Discord_Click(sender, e);
         }
 
-        private void Stream_Manager_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://dashboard.twitch.tv/u/zapb0lt/stream-manager");
-        }
-
+        /*
+        * Hides the current form and shows the keybind form when the settings cog wheel is clicked
+        * 
+        * @param object reference to the control/object that raised the event
+        * @param EventArgs contains event data
+        */
         private void settingsPictureBox_Click(object sender, EventArgs e)
         {
             this.Hide();
             keybindform.Show();
         }
 
+        /*
+        * Changes the Light mode if the switch is set to true
+        * 
+        * @param object reference to the control/object that raised the event
+        * @param EventArgs contains event data
+        */
         private void DarkModeSwitch_CheckedChanged(object sender, EventArgs e)
         {
             if (DarkModeSwitch.Checked == true)
@@ -101,7 +150,7 @@ namespace StreamDeck
             }
         }
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        private void MainForm_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
             {
