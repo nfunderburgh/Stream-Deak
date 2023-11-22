@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.IO;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using Utilities;
-
+using System.Media;
+using System.Drawing;
 
 namespace StreamDeck
 {
@@ -29,13 +23,13 @@ namespace StreamDeck
             InitializeComponent();
             InitializeButtonWidth();
             KeyPreview = true;
-
             keybindform = new KeybindForm(this);
+
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
-            
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Grey700, Primary.Grey800, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+
             globalKeyboardHook gkh = new globalKeyboardHook();
             gkh.HookedKeys.Add(Keys.Q);
             gkh.HookedKeys.Add(Keys.E);
@@ -56,7 +50,8 @@ namespace StreamDeck
             SoundCloudBlutton.Width = width;
             StartStreamButton.Width = width;
             DiscordButton.Width = width;
-            Alert1.Width = width;
+            Airhorn.Width = width;
+            crabrave.Width = width;
         }
 
         /*
@@ -67,8 +62,8 @@ namespace StreamDeck
          */
         private void OBSButton_Click(object sender, EventArgs e)
         {
-            Directory.SetCurrentDirectory(@"C:\Program Files\obs-studio\bin\64bit\");
-            Process.Start(@"C:\Program Files\obs-studio\bin\64bit\obs64.exe");
+            Directory.SetCurrentDirectory(@"D:\obs\obs-studio\bin\64bit");
+            Process.Start(location.obs);
         }
 
         /*
@@ -173,6 +168,27 @@ namespace StreamDeck
                 Stream_Manager_Click(sender, e);
             }
             Console.WriteLine(e.KeyCode.ToString());
+        }
+
+        private void Airhorn_Click(object sender, EventArgs e)
+        {
+            var soundPlayer = new SoundPlayer(@"..\..\sounds\airhorn.wav");
+            Console.WriteLine(Directory.GetCurrentDirectory());
+            soundPlayer.Play(); 
+        }
+
+        private void Crabrave_Click(object sender, EventArgs e)
+        {
+            var soundPlayer = new SoundPlayer(@"..\..\sounds\crabrave.wav");
+            Console.WriteLine(Directory.GetCurrentDirectory());
+            soundPlayer.Play();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            Font labelFont = new Font("Microsoft Sans Serif", 20);
+            programLabel.Font = labelFont;
+            soundsLabel.Font = labelFont;
         }
     }
 }
